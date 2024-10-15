@@ -8,3 +8,11 @@ local map = vim.keymap.set
 -- map("i", "jk", "<ESC>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+map("n", "<leader>k", function()
+  require("dap").toggle_breakpoint()
+end, { desc = "Toggle Breakpoint" })
+
+map("n", "<F5>", function()
+  require("dap").continue()
+end, { desc = "Start Debugger / Continue" })

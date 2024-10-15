@@ -13,6 +13,13 @@ return {
     end,
   },
 
+  {
+    "mfussenegger/nvim-dap",
+    config = function()
+      require "configs.dapconfig"
+    end,
+  },
+
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
