@@ -16,6 +16,8 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+require("configs.omnisharp")
+
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
 --   on_attach = nvlsp.on_attach,

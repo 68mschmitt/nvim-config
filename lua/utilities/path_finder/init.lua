@@ -45,7 +45,7 @@ function M.GetDllPath()
 end
 
 function M.GetNetCoreDbgPath()
-  return vim.fs.normalize(vim.fn.stdpath('data') .. "/mason/packages/netcoredbg/netcoredbg")
+  return vim.fs.normalize(vim.fn.stdpath('data') .. "/mason/packages/netcoredbg/netcoredbg/netcoredbg.exe")
 end
 
 -- nil returned when no project config

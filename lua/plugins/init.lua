@@ -13,6 +13,17 @@ return {
     end,
   },
 
+	{
+		"williamboman/mason-lspconfig.nvim",
+		lazy = true,
+		opts = {
+			ensure_installed = { "lua_ls", "omnisharp", "tsserver", "volar", "pylsp", "csharp_ls" }
+		},
+		dependencies = {
+			"williamboman/mason.nvim"
+		},
+	},
+
   {
 		"mfussenegger/nvim-dap",
 		lazy = true,
